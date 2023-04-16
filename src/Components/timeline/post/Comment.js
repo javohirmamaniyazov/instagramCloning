@@ -1,5 +1,5 @@
 import { format, formatDistance } from "date-fns";
-import { updateComments } from "services/firebase";
+import { updateComments } from "../../../Services/Firebase";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import './style.css';

@@ -1,4 +1,4 @@
-import { checkImage } from "helpers/check-image";
+import { checkImage } from "../../../Helpers/CheckImage";
 import React, { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 

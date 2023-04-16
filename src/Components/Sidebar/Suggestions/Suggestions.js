@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getSuggestedProfiles } from "services/firebase";
+import { getSuggestedProfiles } from "../../../Services/Firebase";
 import './style.css'
 
 export const Suggestions = ({ loggedUserDocId, loggedUserId, following }) => {

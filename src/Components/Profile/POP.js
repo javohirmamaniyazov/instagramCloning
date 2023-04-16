@@ -1,10 +1,9 @@
-import { IPhoto } from "interfaces/interfaces";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { useParams } from "react-router-dom";
 import { formatDistance } from "date-fns";
-import { Comment as CommentComponent } from "components/timeline/post/comment";
-import { useUser } from "hooks/use-user";
+import { Comment as CommentComponent } from "../timeline/post/Comment";
+import { useUser } from "../../Hooks/UsingUser";
 import './style.css';
 
 export const Popup = ({ photo, setPopup }) => {

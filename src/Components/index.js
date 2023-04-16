@@ -1,5 +1,5 @@
-export { Form } from "./form/Form"
-export { Header } from "./header/header"
+export { Form } from "./Form/Form"
+export { Header } from "./Header/Header"
 export { Sidebar } from "./Sidebar/Sidebar"
 export { Timeline } from "./timeline/Timeline"
 export { UserProfile } from "./Profile/Profile"

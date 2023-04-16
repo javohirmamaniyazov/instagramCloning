@@ -1,31 +1,31 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import { Suggestions } from "./Suggestions/Suggestions";
 import User from "./user/User";
-import styled from "styled-components";
-import { useUser } from "hooks/use-user";
-import { useWindowSize } from "hooks/useWindowSize";
+import { useUser } from "../../Hooks/UsingUser";
+import { useWindowSize } from "../../Hooks/UsingWindowSize";
+
+const styles = {
+  container: (width) => ({
+    justifySelf: "flex-end",
+    maxWidth: "293px",
+    marginTop: "1rem",
+    position: "fixed",
+    left: `${width / 2 + 167}px`,
+  }),
+};
 
 export const Sidebar = () => {
     const { user } = useUser();
     const { width } = useWindowSize();
 
     return user ? (
-        <Container width={width}>
+        <nav style={styles.container(width)}>
             <User username={user.username} fullName={user.fullName} />
             <Suggestions
                 loggedUserDocId={user.docId}
                 loggedUserId={user.userId}
                 following={user.following}
             />
-        </Container>
+        </nav>
     ) : null;
 };
-
-const Container = styled.nav(({ width }) => ({
-    justifySelf: "flex-end",
-    maxWidth: "293px",
-    marginTop: "1rem",
-    position: "fixed",
-    left: `${width / 2 + 167}px`,
-}));

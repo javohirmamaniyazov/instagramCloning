@@ -1,17 +1,15 @@
-import { Footer } from "components"
-import { useUser } from "hooks/use-user"
-import { IPhoto, IUser } from "interfaces/interfaces"
+import { useUser } from "../../Hooks/UsingUser"
 import React, { useEffect, useState } from "react"
-import { getPhotosByUserId } from "services/firebase"
-import { Header } from "./Header"
-import { Photos } from "./Photos"
+import { getUserByUserId } from "../../Services/Firebase"
+import  Header  from "./Header"
+import Photos  from "./Photos"
 
 const UserProfile = ({ user: { followers, following, fullName, username, userId, docId } }) => {
-  const [photosCollection, setPhotosCollection] = useState<IPhoto>([]);
+  const [photosCollection, setPhotosCollection] = useState([]);
   const { user } = useUser()
 
   useEffect(() => {
-    getPhotosByUserId(userId)
+    getUserByUserId(userId)
       .then((photos) => {
         setPhotosCollection(photos)
       })

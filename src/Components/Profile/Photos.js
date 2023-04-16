@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Popup } from "./popup/popup";
+import { Popup } from "./POP";
 import './style.css';
 
 const Photos = ({ photosCollection }) => {

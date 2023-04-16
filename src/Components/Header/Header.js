@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
-import { FirebaseAuthContext } from "context/firebase";
-import { checkImage } from "helpers/check-image";
+import { FirebaseAuthContext } from "../../Context/AuthContext";
+import { checkImage } from "../../Helpers/CheckImage";
 
 const Header = () => {
   const user = useContext(FirebaseAuthContext);
