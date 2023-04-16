@@ -1,0 +1,168 @@
+/* Form container */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1c1c1c;
+  }
+  
+  /* Form wrapper */
+  .form-wrapper {
+    width: 400px;
+    padding: 40px;
+    border-radius: 5px;
+    background-color: #141414;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Form logo */
+  .form-logo {
+    display: block;
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Form input fields */
+  .form-input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  /* Form button */
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-button:hover {
+    background-color: #e60000;
+  }
+  
+  /* Form divider */
+  .form-divider {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Form Facebook login */
+  .form-fb-login {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .form-fb-login:hover {
+    background-color: #2d4373;
+  }
+  
+  .form-fb-login img {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Form forgot password */
+  .form-forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .form-forgot-password:hover {
+    color: #fff;
+  }
+  
+  /* Form login/signup redirect */
+  .form-login-signup-redirect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b3b3b3;
+  }
+  
+  .form-login-signup-redirect .form-text {
+    color: #fff;
+  }
+  
+  .form-login-signup-redirect .form-signup-link {
+    margin-left: 5px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0
+    .2s ease-in-out;
+}
+
+.form-login-signup-redirect .form-signup-link:hover {
+color: #e50914;
+}
+
+/* Form bottom */
+.form-bottom {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 16px;
+font-weight: bold;
+color: #b3b3b3;
+}
+
+.form-bottom span {
+margin-right: 10px;
+}
+
+.form-bottom img {
+display: inline-block;
+margin-right: 10px;
+width: 120px;
+height: 40px;
+cursor: pointer;
+transition: transform 0.2s ease-in-out;
+}
+
+.form-bottom img:hover {
+transform: scale(1.1);
+}  
