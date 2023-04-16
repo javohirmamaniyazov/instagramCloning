@@ -5,7 +5,7 @@ import { updateFollowedUserFollowing, updateLoggedUserFollowing } from "../../Se
 
 function ProfileHeader(props) {
     const { followers, following, fullName, username, photosQuantity, docId, userId } = props
-    const { user } = UsingUser()
+    const { user } = useUser()
 
     const initialIsFollowing = user?.following?.includes(userId)
     const initialIsFollowers = followers.includes(user.userId)

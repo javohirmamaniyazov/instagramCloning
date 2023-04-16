@@ -1,5 +1,4 @@
-/* eslint-disable indent */
-import { db } from "firebase/firebase"
+import { db } from "../firebase/firebase"
 import {
     collection,
     query,
@@ -140,6 +139,13 @@ export const getUserByUserId = async (userId) => {
         querySnapshot.docs.map((doc) => ({ ...doc.data(), docId: doc.id }))
     )
     return user
+}
+
+export const updateComments = async (displayName, comment, docId) => {
+    const loggedUserRef = doc(db, "photos", docId);
+    await updateDoc(loggedUserRef, {
+        comments: arrayUnion({ comment, displayName }),
+    });
 }
 
 

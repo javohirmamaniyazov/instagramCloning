@@ -1,6 +1,7 @@
-import { useUser } from "hooks/use-user";
+import { useUser } from "../../Hooks/UsingUser";
 import React, { useEffect, useState } from "react";
-import { getPhotos } from "services/firebase";
+import { getPhotos } from "../../Services/Firebase";
+import Post from './post/Post'
 
 const Timeline = () => {
   const { user } = useUser();

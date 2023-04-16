@@ -1,6 +1,10 @@
-export { Form } from "./Form/Form"
-export { Header } from "./Header/Header"
+import Form from './Form/Form';
+import Header from './header/Header';
+import Timeline from './timeline/Timeline';
+import UserProfile from './Profile/Profile';
+
+export { Form };
+export { Header };
 export { Sidebar } from "./Sidebar/Sidebar"
-export { Timeline } from "./timeline/Timeline"
-export { UserProfile } from "./Profile/Profile"
-export { Footer } from "./footer/footer"
+export { Timeline };
+export { UserProfile };

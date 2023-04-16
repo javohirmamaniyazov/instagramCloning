@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../Components/Header/Header";
+import Header from "../Components/header/Header";
 import Timeline from "../Components/timeline/Timeline";
-import  Sidebar  from "../Components";
+import Sidebar from '../Components/Sidebar/Sidebar';
 import { usingWindowSize } from '../Hooks/UsingWindowSize';
 
 const Dashboard = () => {

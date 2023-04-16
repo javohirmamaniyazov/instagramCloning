@@ -1,4 +1,3 @@
-import { app } from "./firebase/firebase"
 import { FirebaseAuthProvider } from "./Helpers/AuthProvider"
 import React from "react"
 import ReactDOM from "react-dom"
