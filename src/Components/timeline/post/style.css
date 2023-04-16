@@ -1,0 +1,136 @@
+.container {
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.username {
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    width: 35px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.action-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-right: 15px;
+    padding: 0;
+}
+
+.action-button img:hover {
+    filter: brightness(4);
+}
+
+.action-button[like="true"] img:hover {
+    filter: none;
+}
+
+.likes-quantity {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.caption {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.caption .username:hover {
+    text-decoration: underline;
+}
+
+.toggle-comments {
+    color: #8e8e8e;
+    cursor: pointer;
+    margin-bottom: 5px;
+    user-select: none;
+}
+
+.posted {
+    color: #8e8e8e;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.comment-section[showComments="false"] {
+    display: none;
+}
+
+.comment-item {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-top: 1px solid lightgrey;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+.input {
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.button {
+    color: #0095f6;
+    background: none;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.button:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}

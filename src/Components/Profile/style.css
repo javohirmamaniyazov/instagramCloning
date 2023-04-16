@@ -1,0 +1,150 @@
+.container {
+    margin: 5.5rem auto 30px;
+    max-width: 935px;
+    position: relative;
+  }
+  
+  .header-container {
+    display: flex;
+    max-width: 935px;
+    padding: 0 70px;
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-right: 6rem;
+  }
+  
+  @media (max-width: 1000px) {
+    .avatar {
+      margin-right: 2.5rem;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  .profile-info {
+    width: 100%;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .top p {
+    font-size: 30px;
+    font-weight: 300;
+    margin-right: 25px;
+  }
+  
+  .button {
+    background: #0095f6;
+    color: white;
+    padding: 6px 25px;
+  }
+  
+  .edit-button {
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .statistics {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .statistics li {
+    list-style: none;
+    font-size: 16px;
+    margin-right: 40px;
+  }
+  
+  .statistics li span {
+    font-weight: 600;
+  }
+  
+  .full-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .photos-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 290px));
+    gap: 20px;
+    max-width: 100%;
+    border-top: 1px solid lightgray;
+    padding: 3rem 0 20px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .photos-container {
+      gap: 5px;
+    }
+  }
+  
+  .photo-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    user-select: none;
+  }
+  
+  .photo-item {
+    max-width: 293px;
+    max-height: 293px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .photo-item:hover .photo-overlay,
+  .photo-item:focus .photo-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .like-stat {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .like-stat span {
+    display: flex;
+  }
+  
+  .like-stat p {
+    margin-left: 5px;
+  }
+  
+  .like-stat img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .like-stat p {
+      display: none;
+    }
+  }
+  

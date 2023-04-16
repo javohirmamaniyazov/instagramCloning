@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { formatDistance } from "date-fns";
 import { Comment as CommentComponent } from "components/timeline/post/comment";
 import { useUser } from "hooks/use-user";
+import './style.css';
 
 export const Popup = ({ photo, setPopup }) => {
   const [toggleLike, setToggleLike] = useState(photo.userLikedPhoto);
