@@ -2,7 +2,7 @@ import { format, formatDistance } from "date-fns";
 import { updateComments } from "../../../Services/Firebase";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import './style.css';
+import "./style.css";
 
 export const Comment = ({ comments: allComments, docId, username, dateCreated, popup }) => {
   const [showComments, setShowComments] = useState(false);
@@ -24,7 +24,7 @@ export const Comment = ({ comments: allComments, docId, username, dateCreated, p
       <button onClick={() => setShowComments(!showComments)}>
         View all {comments.length} comments
       </button>
-      <p>{formatDistance(dateCreated, new Date())} ago</p>
+      <p>{formatDistance(new Date(dateCreated), new Date())} ago</p>
       {showComments && (
         <div>
           {comments.map((comment, index) => (
@@ -51,7 +51,7 @@ export const Comment = ({ comments: allComments, docId, username, dateCreated, p
     </>
   ) : (
     <>
-      <p style={{ marginLeft: "15px" }}>{format(dateCreated, "MMMM dd")}</p>
+      <p style={{ marginLeft: "15px" }}>{format(new Date(dateCreated), "MMMM dd")}</p>
       <form onSubmit={handleComments}>
         <input
           type="text"

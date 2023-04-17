@@ -1,4 +1,4 @@
-import { FirebaseAuthProvider } from "./Helpers/AuthProvider"
+import { FirebaseAuthProvider } from "./Helper/AuthProvider"
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"

@@ -19,7 +19,7 @@ const Form = () => {
         </form>
         <div className="form-login-signup-redirect">
           <span className="form-text">New to Netflix? </span>
-          <a className="form-signup-link" href="/">Sign up now.</a>
+          <a className="form-signup-link" href="/register">Sign up now.</a>
         </div>
         <div className="form-bottom">
           <span>Get the app.</span>

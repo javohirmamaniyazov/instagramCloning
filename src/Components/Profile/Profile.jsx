@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react"
 import { getUserByUserId } from "../../Services/Firebase"
 import  Header  from "./Header"
 import Photos  from "./Photos"
+import './style.css'
 
 const UserProfile = ({ user: { followers, following, fullName, username, userId, docId } }) => {
   const [photosCollection, setPhotosCollection] = useState([]);

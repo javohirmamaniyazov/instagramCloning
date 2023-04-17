@@ -1,13 +1,11 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import { FirebaseAuthContext } from "../../Context/AuthContext";
-import  checkImage  from "../../Helper/CheckImage";
 
 const Header = () => {
   const user = useContext(FirebaseAuthContext);
   const [isOpen, setIsOpen] = useState(false);
-  const [isImageExist, setIsImageExists] = useState(false);
   const navigate = useNavigate();
 
   const signOutHandler = () => {
@@ -20,12 +18,6 @@ const Header = () => {
         console.error(error);
       });
   };
-
-  useEffect(() => {
-    if (user) {
-      checkImage(`/images/avatars/${user.displayName}.jpg`, setIsImageExists);
-    }
-  }, [user]);
 
   return (
     <header className="container">
@@ -43,14 +35,7 @@ const Header = () => {
                 className="avatar"
                 onClick={() => setIsOpen((isOpen) => !isOpen)}
               >
-                {isImageExist ? (
-                  <img
-                    src={`/images/avatars/${user.displayName}.jpg`}
-                    alt="User"
-                  />
-                ) : (
-                  <img src={"/images/avatars/default.png"} alt="User" />
-                )}
+                <img src={`/images/avatars/${user.displayName}.jpg`} alt="User" />
               </button>
               {isOpen && (
                 <div className="dropdown-menu">

@@ -1,4 +1,4 @@
-export const checkImage = (url, setIsImageExists) => {
+function checkImage(url, setIsImageExists) {
   const request = new XMLHttpRequest();
   request.open("GET", url, true);
   request.send();
@@ -10,6 +10,4 @@ export const checkImage = (url, setIsImageExists) => {
       setIsImageExists(false);
     }
   };
-};
-
-
+}
