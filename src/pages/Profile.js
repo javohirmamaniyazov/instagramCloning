@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getUserByUsername } from "services/firebase";
-import { UserProfile, Header } from "components";
-import * as ROUTES from "constants/routes";
+import { getUserPhotosByUsername } from "../Services/Firebase";
+import  UserProfile  from "../Components/Profile/Profile";
+import Header from '../Components/header/Header';
+import * as ROUTES from "../Constants/Routes";
 
 const Profile = () => {
   const { username } = useParams();
@@ -11,7 +12,7 @@ const Profile = () => {
 
   useEffect(() => {
     const checkIsUserExists = async () => {
-      const user = await getUserByUsername(username);
+      const user = await getUserPhotosByUsername(username);
       if (user?.userId) {
         setUser(user);
       } else {

@@ -1,8 +1,9 @@
 import React from "react";
 import { Suggestions } from "./Suggestions/Suggestions";
 import User from "./user/User";
-import { useUser } from "../../Hooks/UsingUser";
-import { useWindowSize } from "../../Hooks/UsingWindowSize";
+import { useUser } from "../../hooks/UsingUser";
+import useWindowSize from "../../hooks/UsingWindowSize";
+
 
 const styles = {
   container: (width) => ({
@@ -14,7 +15,7 @@ const styles = {
   }),
 };
 
-export const Sidebar = () => {
+const SidebarSection = () => {
     const { user } = useUser();
     const { width } = useWindowSize();
 
@@ -29,3 +30,5 @@ export const Sidebar = () => {
         </nav>
     ) : null;
 };
+
+export default SidebarSection

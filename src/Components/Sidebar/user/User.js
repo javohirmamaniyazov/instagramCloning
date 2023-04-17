@@ -1,6 +1,7 @@
-import { checkImage } from "../../../Helpers/CheckImage";
+
 import React, { memo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import checkImage from "../../../Helper/CheckImage";
 
 const User = ({ fullName, username }) => {
   const [isImageExist, setIsMageExist] = useState(false);

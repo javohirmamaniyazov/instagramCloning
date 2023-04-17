@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { updateLike } from "services/firebase";
+import { updateLike } from "../../../Services/Firebase";
 import './style.css';
 
 function Footer(props) {

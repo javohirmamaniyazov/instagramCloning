@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import { FirebaseAuthContext } from "../../Context/AuthContext";
-import { checkImage } from "../../Helpers/CheckImage";
+import  checkImage  from "../../Helper/CheckImage";
 
 const Header = () => {
   const user = useContext(FirebaseAuthContext);
@@ -77,7 +77,7 @@ const Header = () => {
             <Link to="/login">
               <button className="btn bg">Log In</button>
             </Link>
-            <Link to="/signup">
+            <Link to="/register">
               <button className="btn">Sign Up</button>
             </Link>
           </div>

@@ -1,7 +1,8 @@
-import { useUser } from "../../Hooks/UsingUser";
+import { useUser } from "../../hooks/UsingUser";
 import React, { useEffect, useState } from "react";
 import { getPhotos } from "../../Services/Firebase";
-import Post from './post/Post'
+import PostComp from "./post/PostComp";
+
 
 const Timeline = () => {
   const { user } = useUser();
@@ -54,7 +55,7 @@ const Timeline = () => {
     <>
       <section style={{ maxWidth: "614px", width: "100%", maxHeight: "600px" }}>
         {photos.map((photo) => (
-          <Post photo={photo} key={photo.docId} />
+          <PostComp photo={photo} key={photo.docId}/>
         ))}
       </section>
     </>

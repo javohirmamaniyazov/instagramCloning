@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { useParams } from "react-router-dom";
 import { formatDistance } from "date-fns";
 import { Comment as CommentComponent } from "../timeline/post/Comment";
-import { useUser } from "../../Hooks/UsingUser";
+import { useUser } from "../../hooks/UsingUser";
 import './style.css';
 
 export const Popup = ({ photo, setPopup }) => {

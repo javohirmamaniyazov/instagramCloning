@@ -5,10 +5,10 @@ import App from "./App"
 
 
 ReactDOM.render(
-  firebase && (
+  (
     <FirebaseAuthProvider>
       <App />
-    </FirebaseAuthProvider>
+     </FirebaseAuthProvider> 
   ),
   document.getElementById("root")
 )

@@ -1,11 +1,11 @@
-import React, { FormEvent, useCallback, useState } from "react";
-import { Form } from "components";
+import React, { useCallback, useState } from "react";
+import Form from "../Components/Form/Form";
 import { Link, useNavigate } from "react-router-dom";
-import * as ROUTES from "constants/routes";
+import * as ROUTES from "../Constants/Routes";
 import { createUserWithEmailAndPassword, getAuth, updateProfile } from "firebase/auth";
-import { doesUsernameExist } from "services/firebase";
+import { doesUsernameExist } from "../Services/Firebase"
 import { addDoc, collection } from "firebase/firestore";
-import { db } from "firebase/firebase";
+import { db } from "../firebase/firebase";
 
 const SignUp = () => {
     const [fullName, setfullName] = useState("");

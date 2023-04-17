@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../Components/header/Header";
 import Timeline from "../Components/timeline/Timeline";
-import Sidebar from '../Components/Sidebar/Sidebar';
-import { usingWindowSize } from '../Hooks/UsingWindowSize';
+import SidebarSection from '../Components/Sidebar/Sidebar'
+import useWindowSize from "../hooks/UsingWindowSize";
+
 
 const Dashboard = () => {
-  const { width } = usingWindowSize();
+  const { width } = useWindowSize();
 
   return (
     <div>
@@ -20,7 +21,7 @@ const Dashboard = () => {
         }}
       >
         <Timeline />
-        {width > 1000 && <Sidebar />}
+        {width > 1000 && <SidebarSection />}
       </div>
     </div>
   );

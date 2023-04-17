@@ -1,11 +1,12 @@
-import { useUser } from "../../Hooks/UsingUser"
+
 import React, { useEffect, useState } from "react"
 import './style.css';
 import { updateFollowedUserFollowing, updateLoggedUserFollowing } from "../../Services/Firebase"
+import { useUser } from "../../hooks/UsingUser";
 
 function ProfileHeader(props) {
     const { followers, following, fullName, username, photosQuantity, docId, userId } = props
-    const { user } = useUser()
+    const { user } = useUser();
 
     const initialIsFollowing = user?.following?.includes(userId)
     const initialIsFollowers = followers.includes(user.userId)

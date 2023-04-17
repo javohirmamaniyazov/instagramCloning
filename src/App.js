@@ -1,5 +1,5 @@
 import { FirebaseAuthContext } from "./Context/AuthContext";
-import { RequireAuth, WithRedirectAuthUser } from "./Helpers/Routes";
+import { RequireAuth, WithRedirectAuthUser } from "./Helper/Routes";
 import React, { lazy, Suspense, useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import * as ROUTES from './Constants/Routes';

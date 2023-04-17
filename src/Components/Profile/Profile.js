@@ -1,4 +1,4 @@
-import { useUser } from "../../Hooks/UsingUser"
+import { useUser } from "../../hooks/UsingUser"
 import React, { useEffect, useState } from "react"
 import { getUserByUserId } from "../../Services/Firebase"
 import  Header  from "./Header"

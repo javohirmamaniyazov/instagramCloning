@@ -1,11 +1,11 @@
 import React from "react";
-import { useUser } from "hooks/use-user";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import { useUser } from "../../../hooks/UsingUser";
+import  Header  from "./Header";
+import  Footer  from "./Footer";
 import { Comment } from "./Comment";
 import './style.css';
 
-export const Post = ({ photo }) => {
+const PostComp = ({ photo }) => {
     const { user } = useUser();
 
     const { imageSrc, caption, comments, username, likes, userLikedPhoto, docId, dateCreated } = photo;
@@ -36,3 +36,5 @@ export const Post = ({ photo }) => {
         </div>
     );
 };
+
+export default PostComp;
